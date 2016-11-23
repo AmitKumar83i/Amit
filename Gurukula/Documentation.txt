@@ -1,0 +1,34 @@
+Automation Framework for testing Gurukula! appilcation
+
+Strategy: Page Object Model to put Weblements and actions on respective pages for the purpose of ease and maintainability.
+
+All tests would run on Chrome browser.
+
+Used following things to developed:
+- Selenium 3.0.1
+- Java 1.8.0_111
+- TestnG 6.9.11.201604020423
+
+
+Note: Need to update ChromeDriver.exe path in BaseTest.java file.
+System.setProperty("webdriver.chrome.driver", "C:\\<PATH>\\chromedriver.exe");
+
+Automated following tests:
+- Texts present on Home page
+- Register a new user
+- View and Edit logged in informations
+- Add,Viewing, Editing and Delete branch
+- Add,Viewing, Editing and Delete staff
+
+
+Information about xmls file which contains test:
+LoginPageLabelTest.xml:Texts present on Home page
+RegistrationTest.xml:Register a new user
+AllTests.xml:(View and Edit logged in informations,Add,Viewing, Editing and Delete branch, Add,Viewing, Editing and Delete staff)
+
+Steps to Run
+1. Build the project
+2. Run LoginPageLabelTest.xml file using TestNG
+3. Run LoginPageLabelTest.xml file using TestNG
+3. Run AllTests.xml file using TestNG
+
